@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from 'next/link'
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 import styles from "./page.module.css";
@@ -29,13 +30,13 @@ export default function RootLayout({
         </h1>
         <ul className="flex gap-5 py-5 pl-2">
         <li className="mr-6">
-            <a className="text-blue-500 hover:text-blue-800" href="/#">Home</a>
+            <Link className="text-blue-500 hover:text-blue-800" href="/#">Home</Link>
           </li>
           <li className="mr-6">
-            <a className="text-blue-500 hover:text-blue-800" href="/language-blog">Language Blog</a>
+            <Link className="text-blue-500 hover:text-blue-800" href="/language-blog">Language Blog</Link>
           </li>
           <li className="mr-6">
-            <a className="text-blue-500 hover:text-blue-800" href="/code-blog">Code Blog</a>
+            <Link className="text-blue-500 hover:text-blue-800" href="/code-blog">Code Blog</Link>
           </li>
         </ul>
 
