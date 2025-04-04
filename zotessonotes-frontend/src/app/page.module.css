@@ -1,16 +1,28 @@
 .pageContainer {
-  background-color: brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .main {
-  width: 70%;
-    left: 15%;
-    position: absolute;
-    right: 15%;
+    width: 70%;
+    min-height: 90vh;
     height: 100%;
     background: rgb(112,43,28);
     background: linear-gradient(90deg, rgba(112,43,28,1) 0%, rgba(120,47,32,1) 6%, rgba(120,47,32,1) 94%, rgba(112,43,28,1) 100%);  color: white;
   }
+
+.footer {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  background: rgb(112,43,28);
+  background: linear-gradient(90deg, rgba(112,43,28,1) 0%, rgba(120,47,32,1) 6%, rgba(120,47,32,1) 94%, rgba(112,43,28,1) 100%);  color: white;
+}
 
 
 @media (max-width: 600px) {

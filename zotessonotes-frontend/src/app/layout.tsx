@@ -20,15 +20,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt">
       <body className={`${montserratSans.variable}`}>
       <div className={styles.pageContainer}>
       <main className={styles.main}>
         <header className="flex flex-col justify-center items-center">
-        <h1 className="text-3xl font-bold underline pt-2">
+        <h1 className="text-3xl font-bold underline" style={{marginTop: "1rem"}}>
           Minhas anotações
         </h1>
-        <ul className="flex gap-5 py-5 pl-2">
+        <ul className="flex gap-5 pl-2" style={{marginTop: "1rem"}}>
         <li className="mr-6">
             <Link className="text-blue-500 hover:text-blue-800" href="/#">Home</Link>
           </li>
@@ -45,10 +45,11 @@ export default function RootLayout({
           {children}
         </section>
       </main>
-      <footer >
-       
-      </footer>
+
     </div>
+    <footer className={styles.footer}>
+        <p>© 2025 - Pedro Zotesso</p>
+      </footer>
       </body>
     </html>
   );
